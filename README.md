@@ -8,7 +8,7 @@
 
 ## Problem Statement
 
-This dashboard provides the details of Bhoj App which is the online food and groceries delivery. It helps the servive-provider to know if their customers are satisfied with their services. Through different ratings, they get to know their improvement area, & thus they can improve their services by identifying these area. 
+This dashboard provides the details of Bhoj App which is the online food and groceries deliveryapp. It helps the service-provider to know if their customers are satisfied with their services. Through different ratings, they get to know their improvement area, & thus they can improve their services by identifying these area. 
 
 Since, the average rating is almost 4 so it is doing well in its service. 
 
