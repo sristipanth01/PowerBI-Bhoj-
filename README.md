@@ -28,35 +28,35 @@ This document outlines the creation of a Power BI dashboard for Bhoj, an online 
 
 **Load Data into Power BI Desktop:**
 - Load your dataset (Excel/CSV/Database) into Power BI Desktop.
-Go to Home > Get Data > Excel Workbook > Select your dataset file.
+--Go to Home > Get Data > Excel Workbook > Select your dataset file.
 
 **Open Power Query Editor and Check Column Properties:**
 - Open Power Query Editor:
-Go to Home > Transform Data > Power Query Editor.
+--Go to Home > Transform Data > Power Query Editor.
 - Enable Column Properties:
-View > Enable "Column Distribution," "Column Quality," and "Column Profile."
+--View > Enable "Column Distribution," "Column Quality," and "Column Profile."
 
 **Ensure No Column Errors or Empty Values:**
 -Remove rows with null or blank values:
-Go to Power Query Editor > Select the column > Use the "Remove Rows" or "Replace Values" feature to handle missing or erroneous data.
+--Go to Power Query Editor > Select the column > Use the "Remove Rows" or "Replace Values" feature to handle missing or erroneous data.
 
 **Calculate Average Sales (Ignoring Null Values):**
 - Create a calculated column in Power BI:
-Average Sales = 
+--Average Sales = 
     AVERAGEX(
         FILTER(SalesTable, NOT(ISBLANK(SalesTable[SalesAmount]))), 
         SalesTable[SalesAmount]
     )
   **Add Visualizations for Ratings:**
 - Add visuals:
-Go to the "Report" view, and drag data fields into the canvas.
-Use the "Visualizations" pane to add visuals like:
+--Go to the "Report" view, and drag data fields into the canvas.
+--Use the "Visualizations" pane to add visuals like:
 - Pie Chart (for distribution of ratings).
 - Line Chart (for trends in ratings over time).
 
 **Add Visual Filters:**
 - Add filters:
-Drag any data field into the "Filters" pane and apply conditions, such as:
+--Drag any data field into the "Filters" pane and apply conditions, such as:
 Ratings > 0 (Exclude null or blank values).
 
 -- Examples of visuals:
