@@ -51,7 +51,7 @@ Average Sales =
         SalesTable[SalesAmount]
     )
 
-  **Add Visualizations for Ratings:**
+  5. Add Visualizations for Ratings:
 - Add visuals:
 --Go to the "Report" view, and drag data fields into the canvas.
 --Use the "Visualizations" pane to add visuals like:
