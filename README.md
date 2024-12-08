@@ -42,13 +42,32 @@ This document outlines the creation of a Power BI dashboard for Bhoj, an online 
 
 ### 4. Calculate Average Sales (Ignoring Null Values):
 - Create a calculated column in Power BI:
-```DAX
-Average Sales = 
-    AVERAGEX(
-        FILTER(SalesTable, NOT(ISBLANK(SalesTable[SalesAmount]))), 
-        SalesTable[SalesAmount]
-    )
+    ```DAX
+    Average Sales = 
+        AVERAGEX(
+            FILTER(SalesTable, NOT(ISBLANK(SalesTable[SalesAmount]))), 
+            SalesTable[SalesAmount]
+        )
+    ```
 
+### 5. Add Visualizations for Ratings:
+- Add visuals:
+    - Go to the "Report" view, and drag data fields into the canvas.
+    - Use the "Visualizations" pane to add visuals like:
+        - **Pie Chart**: For distribution of ratings.
+        - **Line Chart**: For trends in ratings over time.
+
+### 6. Add Visual Filters:
+- Add filters:
+    - Drag any data field into the "Filters" pane and apply conditions, such as:
+        - **Ratings > 0**: Exclude null or blank values.
+
+### 7. Examples of Visuals:
+1. **Slicer**: Drag `Region` or `Category` to the canvas and set it as a slicer.
+2. **Card**: Display `Total Sales` as a single number.
+3. **Pie Chart**: Use `Ratings Distribution` for the chart.
+4. **Donut Chart**: Use `Category-wise Sales` for analysis.
+5. **Matrix Table**: Use columns like `Region`, `Item`, and `SalesAmount` for tabular insights.
 
 
 
