@@ -26,8 +26,6 @@ This document outlines the creation of a Power BI dashboard for Bhoj, an online 
 
 ## Steps Followed
 
-## Steps Followed
-
 ### 1. Load Data into Power BI Desktop:
 - Load your dataset (Excel/CSV/Database) into Power BI Desktop.
     - Go to Home > Get Data > Excel Workbook > Select your dataset file.
@@ -50,7 +48,6 @@ Average Sales =
         FILTER(SalesTable, NOT(ISBLANK(SalesTable[SalesAmount]))), 
         SalesTable[SalesAmount]
     )
-
 
 
 
