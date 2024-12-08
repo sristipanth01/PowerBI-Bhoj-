@@ -26,27 +26,27 @@ This document outlines the creation of a Power BI dashboard for Bhoj, an online 
 
 ## Steps Followed
 
-## Load Data into Power BI Desktop:
+### Load Data into Power BI Desktop:
 - Load your dataset (Excel/CSV/Database) into Power BI Desktop.
     Go to Home > Get Data > Excel Workbook > Select your dataset file.
 
 **Open Power Query Editor and Check Column Properties:**
 - Open Power Query Editor:
---Go to Home > Transform Data > Power Query Editor.
+     Go to Home > Transform Data > Power Query Editor.
 - Enable Column Properties:
---View > Enable "Column Distribution," "Column Quality," and "Column Profile."
+     View > Enable "Column Distribution," "Column Quality," and "Column Profile."
 
 **Ensure No Column Errors or Empty Values:**
 -Remove rows with null or blank values:
---Go to Power Query Editor > Select the column > Use the "Remove Rows" or "Replace Values" feature to handle missing or erroneous data.
+     Go to Power Query Editor > Select the column > Use the "Remove Rows" or "Replace Values" feature to handle missing or erroneous data.
 
 **Calculate Average Sales (Ignoring Null Values):**
 - Create a calculated column in Power BI:
---Average Sales = 
-    AVERAGEX(
+    Average Sales = 
+      AVERAGEX(
         FILTER(SalesTable, NOT(ISBLANK(SalesTable[SalesAmount]))), 
         SalesTable[SalesAmount]
-    )
+      )
   **Add Visualizations for Ratings:**
 - Add visuals:
 --Go to the "Report" view, and drag data fields into the canvas.
@@ -67,8 +67,6 @@ Ratings > 0 (Exclude null or blank values).
 5. **Matrix Table**: Use columns like `Region`, `Item`, and `SalesAmount` for tabular insights.
 
 
-
-**Note:** By default, blank values were ignored while calculating averages.
 
 ## Results
 
