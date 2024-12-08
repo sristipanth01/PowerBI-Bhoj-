@@ -51,24 +51,7 @@ Average Sales =
         SalesTable[SalesAmount]
     )
 
-  5. Add Visualizations for Ratings:
-- Add visuals:
---Go to the "Report" view, and drag data fields into the canvas.
---Use the "Visualizations" pane to add visuals like:
-- Pie Chart (for distribution of ratings).
-- Line Chart (for trends in ratings over time).
 
-**Add Visual Filters:**
-- Add filters:
---Drag any data field into the "Filters" pane and apply conditions, such as:
-Ratings > 0 (Exclude null or blank values).
-
--- Examples of visuals:
-1. **Slicer**: Drag `Region` or `Category` to the canvas and set it as a slicer.
-2. **Card**: Display `Total Sales` as a single number.
-3. **Pie Chart**: Use `Ratings Distribution` for the chart.
-4. **Donut Chart**: Use `Category-wise Sales` for analysis.
-5. **Matrix Table**: Use columns like `Region`, `Item`, and `SalesAmount` for tabular insights.
 
 
 
