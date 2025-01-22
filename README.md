@@ -38,7 +38,7 @@ This document outlines the creation of a Power BI dashboard for Bhoj, an online 
 
 ### 3. Ensure No Column Errors or Empty Values:
 - Remove rows with null or blank values:
-    - Go to Power Query Editor > Select the column > Use the "Remove Rows" or "Replace Values" feature to handle missing or erroneous data.
+    - Go to Power Query Editor > Select the column > Use the "Remove Rows" or "Replace Values" features to handle missing or erroneous data.
 
 ### 4. Calculate Average Sales (Ignoring Null Values):
 - Create a calculated column in Power BI:
